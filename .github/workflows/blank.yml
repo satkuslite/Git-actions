@@ -22,7 +22,7 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - name: Print Hi
-        run: echo "hello"
+        run: echo "hello, ${{ vars.MY_NAME }}"
       - name: Print Congrats
         run: echo "acc"
 
