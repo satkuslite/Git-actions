@@ -24,7 +24,17 @@ jobs:
         run: echo "hello, ${{ vars.MY_NAME }}"
       - name: Print Congrats
         run: echo "acc, ${{ secrets.MY_LASTNAME }}"
-
+  build-my:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+    environment: Test
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - name: Print Hi
+        run: echo "hello, ${{ vars.MY_NAME }}"
+      - name: Print Congrats
+        run: echo "acc"
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
       #   run: echo Hello, world!
