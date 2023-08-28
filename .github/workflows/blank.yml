@@ -23,7 +23,7 @@ jobs:
       - name: Print Hi
         run: echo "hello, ${{ vars.MY_NAME }}"
       - name: Print Congrats
-        run: echo "acc"
+        run: echo "acc, ${{ secrets.MY_LASTNAME }}"
 
       # # Runs a single command using the runners shell
       # - name: Run a one-line script
